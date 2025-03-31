@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Alex Diaz" />
+    <meta name="description" content="Receta de Arroz con Leche" />
+    <meta name="keywords" content="Receta, Arroz, Leche" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Cómo hacer Arroz con Leche</title>
+    <link rel="icon" type="image/x-icon" href="./images/icon.jpg" />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Cocinando facilito</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#header">
+                  <i class="bi bi-house-door-fill me-1"></i>Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="bi bi-journal-bookmark-fill me-1"></i>Recetario
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="bi bi-people-fill me-1"></i>Comunidad</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Recetas</a></li>
+            <li class="breadcrumb-item"><a href="#">Postres</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Arroz con Leche
+            </li>
+          </ol>
+        </nav>
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-content">
+                <img
+                  src="./images/arroz-con-leche.jpeg"
+                  class="d-block w-100"
+                  alt="Arroz con leche imagen"
+                />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-content">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/xQsPiAf-t1Q?si=V4U3VbcI6jf8cwWG"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                  class="d-block w-100"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div class="container px-10 my-3">
+          <div
+            class="border rounded p-3 mx-5 d-flex justify-content-between text-center"
+          >
+            <div>
+              <small class="text-muted d-block">Total</small>
+              <i class="bi bi-clock text-warning"></i> 50
+            </div>
+
+            <div>
+              <small class="text-muted d-block">Dificultad</small>
+              <strong>Intermedio</strong>
+            </div>
+
+            <div>
+              <small class="text-muted d-block">Costo</small>
+              <span class="text-warning">$</span>
+              <span class="text-warning">$</span>
+              <span class="text-secondary">$</span>
+            </div>
+
+            <div>
+              <small class="text-muted d-block">Calificación</small>
+              <i class="bi bi-star-fill text-warning"></i> 4.8
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <h1>Arroz con Leche</h1>
+        </div>
+        <h5>Por Jose Duran</h5>
+        <p>
+          El arroz con leche es un postre tradicional y reconfortante que
+          combina arroz cocido lentamente en leche con azúcar, canela y cáscara
+          de limón. Su textura cremosa y sabor dulce lo hacen perfecto para
+          disfrutar tanto frío como caliente. Esta receta clásica, muy popular
+          en muchos países de habla hispana, es fácil de preparar y requiere
+          ingredientes básicos que seguro ya tienes en casa. Ideal para
+          compartir en familia o como un dulce final después de una comida
+          casera.
+        </p>
+        <h2 class="mt-4">Utensilios</h2>
+        <div class="card shadow-sm">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cuchara de madera</li>
+            <li class="list-group-item">Olla mediana</li>
+            <li class="list-group-item">Taza medidora</li>
+            <li class="list-group-item">Colador</li>
+            <li class="list-group-item">Cucharón</li>
+            <li class="list-group-item">Temporizador</li>
+            <li class="list-group-item">Rallador</li>
+          </ul>
+        </div>
+        <h2 class="mt-4">Ingredientes</h2>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <input
+              class="form-check-input me-1"
+              type="checkbox"
+              value=""
+              id="firstCheckboxStretched"
+            />
+            <label
+              class="form-check-label stretched-link"
+              for="firstCheckboxStretched"
+              >2 Tazas de agua</label
+            >
+          </li>
+          <li class="list-group-item">
+            <input
+              class="form-check-input me-1"
+              type="checkbox"
+              value=""
+              id="secondCheckboxStretched"
+            />
+            <label
+              class="form-check-label stretched-link"
+              for="secondCheckboxStretched"
+              >1 Raja de canela</label
+            >
+          </li>
+          <li class="list-group-item">
+            <input
+              class="form-check-input me-1"
+              type="checkbox"
+              value=""
+              id="thirdCheckboxStretched"
+            />
+            <label
+              class="form-check-label stretched-link"
+              for="thirdCheckboxStretched"
+              >1 Taza de arroz, remojado en agua caliente por 20 minutos y
+              escurrido</label
+            >
+          </li>
+          <li class="list-group-item">
+            <input
+              class="form-check-input me-1"
+              type="checkbox"
+              value=""
+              id="fourthCheckboxStretched"
+            />
+            <label
+              class="form-check-label stretched-link"
+              for="fourthCheckboxStretched"
+              >1 Lata de Leche Condensada LA LECHERA®</label
+            >
+          </li>
+          <li class="list-group-item">
+            <input
+              class="form-check-input me-1"
+              type="checkbox"
+              value=""
+              id="fifthCheckboxStretched"
+            />
+            <label
+              class="form-check-label stretched-link"
+              for="fifthCheckboxStretched"
+              >1 Lata de Leche Evaporada CARNATION® CLAVEL®</label
+            >
+          </li>
+          <li class="list-group-item">
+            <input
+              class="form-check-input me-1"
+              type="checkbox"
+              value=""
+              id="sixthCheckboxStretched"
+            />
+            <label
+              class="form-check-label stretched-link"
+              for="sixthCheckboxStretched"
+              >1/2 Taza de pasas</label
+            >
+          </li>
+          <li class="list-group-item">
+            <input
+              class="form-check-input me-1"
+              type="checkbox"
+              value=""
+              id="seventhCheckboxStretched"
+            />
+            <label
+              class="form-check-label stretched-link"
+              for="seventhCheckboxStretched"
+              >1 Cascara de limon</label
+            >
+          </li>
+          <li class="list-group-item">
+            <input
+              class="form-check-input me-1"
+              type="checkbox"
+              value=""
+              id="eighthCheckboxStretched"
+            />
+            <label
+              class="form-check-label stretched-link"
+              for="eighthCheckboxStretched"
+              >1 Cucharada de canela molida</label
+            >
+          </li>
+        </ul>
+
+        <h2 class="mt-4">Preparación</h2>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <input
+              class="form-check-input me-1"
+              type="checkbox"
+              value=""
+              id="step1"
+            />
+            <label class="form-check-label stretched-link" for="step1"
+              >Hierve el agua con la raja de canela en una olla grande.</label
+            >
+          </li>
+          <li class="list-group-item">
+            <input
+              class="form-check-input me-1"
+              type="checkbox"
+              value=""
+              id="step2"
+            />
+            <label class="form-check-label stretched-link" for="step2"
+              >Agrega el arroz escurrido y cocina a fuego medio hasta que el
+              agua se consuma.</label
+            >
+          </li>
+          <li class="list-group-item">
+            <input
+              class="form-check-input me-1"
+              type="checkbox"
+              value=""
+              id="step3"
+            />
+            <label class="form-check-label stretched-link" for="step3"
+              >Vierte la Leche Evaporada y mezcla constantemente para evitar que
+              se pegue.</label
+            >
+          </li>
+          <li class="list-group-item">
+            <input
+              class="form-check-input me-1"
+              type="checkbox"
+              value=""
+              id="step4"
+            />
+            <label class="form-check-label stretched-link" for="step4"
+              >Añade la Leche Condensada poco a poco y sigue mezclando.</label
+            >
+          </li>
+          <li class="list-group-item">
+            <input
+              class="form-check-input me-1"
+              type="checkbox"
+              value=""
+              id="step5"
+            />
+            <label class="form-check-label stretched-link" for="step5"
+              >Agrega las pasas y la cáscara de limón, continúa cocinando por 10
+              minutos más.</label
+            >
+          </li>
+          <li class="list-group-item">
+            <input
+              class="form-check-input me-1"
+              type="checkbox"
+              value=""
+              id="step6"
+            />
+            <label class="form-check-label stretched-link" for="step6"
+              >Retira del fuego, deja enfriar un poco y espolvorea con canela
+              molida antes de servir.</label
+            >
+          </li>
+        </ul>
+
+        <h2 class="mt-5">Deja tu comentario</h2>
+        <form class="mt-3">
+          <div class="mb-3">
+            <label for="nameInput" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nameInput"
+              placeholder="Tu nombre"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="commentInput" class="form-label">Comentario</label>
+            <textarea
+              class="form-control"
+              id="commentInput"
+              rows="4"
+              placeholder="Escribe tu comentario aquí..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="bg-light text-center text-muted py-3 mt-5">
+      <small>&copy; 2025 Cocina facilito. Todos los derechos reservados.</small>
+    </footer>
+  </body>
+</html>
